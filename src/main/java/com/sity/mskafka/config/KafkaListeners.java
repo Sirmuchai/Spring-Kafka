@@ -1,4 +1,4 @@
-package com.sity.mskafka;
+package com.sity.mskafka.config;
 
 
 import org.springframework.stereotype.Component;
