@@ -16,7 +16,9 @@ public class MsKafkaApplication {
     @Bean
     CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate){
         return args -> {
-            kafkaTemplate.send("Sity", "Kafka message from producer");
+            for(int i = 0; i<100; i++){
+                kafkaTemplate.send("Sity", "Kafka message " +i);
+            }
         };
     }
 
